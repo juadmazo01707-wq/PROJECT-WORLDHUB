@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- Le indica al explorador web que el código que estamos realizando es html -->
+<html lang="es"> <!-- Etiqueta de raíz de la estructura -->
+    <head> <!-- Etiqueta para agregar características de la página web -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> KEPLER 22B </title> <!-- Etiqueta que indica el título de la página web -->
+        <link rel="stylesheet" href="kepler.css"> <!-- Call file .css for desing -->
+    </head> 
+
+    <body> <!-- Etiqueta donde se incluye todo el contenido de la página web -->
+        <div class="title"> KEPLER 22B </div> <!-- Titulo principal de la página -->
+
+        <div class="container"> <!-- Contenido del menú -->
+            <aside class="sidebar"> <!-- Menú lateral -->
+
+                <div class="main-principal"> <!-- Etiqueta para crear el menu principal -->
+                    <a href="#intro"> Introducción </a> <!-- Llama la seccion intro -->
+                </div>
+
+                <div class="main-item">
+                    <input type="checkbox" id="lux-toogle"> <!-- Etiqueta para crear un checkbox -->
+                    <label for="lux-toogle" class="main-title"> Reino de la luz </label>
+
+                    <div class="submain">
+                        <a href="solar.html"> Reino </a>
+                        <a href="solar.html#lux-carcater"> Características </a>
+                        <a href="solar.html#lux-cultura"> Cultura </a>
+                        <a href="solar.html#lux-entidad"> Entidad suprema </a>
+                        <a href="solar.html#lux-criaturas"> Criaturas </a>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <input type="checkbox" id="dark-toogle"> 
+                    <label for="dark-toogle" class="main-title"> Reino de la Oscuridad </label>
+
+                    <div class="submain"> 
+                        <a href="dark.html"> Reino </a>
+                        <a href="dark.html#dark-carcater"> Características </a>
+                        <a href="dark.html#dark-cultura"> Cultura </a>
+                        <a href="dark.html#dark-entidad"> Entidad suprema </a>
+                        <a href="dark.html#dark-criaturas"> Criaturas </a>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <input type="checkbox" id="medium-toogle"> 
+                    <label for="medium-toogle" class="main-title"> Reino del Medio </label>
+
+                    <div class="submain"> 
+                        <a href="medium.html"> Reino </a>
+                        <a href="medium.html#medium-carcater"> Características </a>
+                        <a href="medium.html#medium-cultura"> Cultura </a>
+                        <a href="medium.html#medium-entidad"> Entidad suprema </a>
+                        <a href="medium.html#meidum-criaturas"> Criaturas </a>
+                    </div>
+                </div>
+            </aside>
+            
+            <div class="video-container"> <!-- Contenido del video -->
+                <video autoplay muted loop playsinline preload="auto"> <!-- Etiqueta para cargar el video sin audio -->
+                    <source src="/kepler_page/multimedia/videos/vxxdy-tcyx8.mp4" type="video/mp4"> <!-- Etiqueta para llamar el video -->
+                    Tu navegador no soporta video. <!-- Mensaje de error -->
+                </video>
+            </div>
+
+        
+            <main class="main-content"> <!-- Contenido principal -->
+
+                <section id="intro" class="text-box"> <!-- Etiqueta para crear una seccion identificada como intro -->
+                    <h1 class="handwritten-title"> Introducción </h1> <!-- Etiqueta que indica un titulo -->
+                    <p> 
+                        Kepler 22b es un exoplaneta en una órbita tan peculiar que presenta una rotación sincronizada con su estrella, lo que significa que un hemisferio está siempre iluminado, mientras que el otro está en completa oscuridad. 
+                        La línea divisoria, conocida como "La Franja de Medianoche", es un limbo perpetuo donde la transición entre luz y sombra crea un borde borroso, y donde las condiciones cambian drásticamente de un lado a otro; corresponde al reino de "". 
+                        A sus extremos se encuentran los reinos de Lux y Dartumbria. Y más allá de ellos… las Tierras Exteriores, hogar de criaturas, nómadas y rezagados que no pertenecen a ninguna corte.
+                    </p>
+                
+                    <div class="subseccion"> <!-- Etiqueta para crear una subseccion -->
+                        <p>
+                            <span class="border-top"> Datos rápidos: </span>
+                                <ul class="tabed-list">
+                                <li> <i class="cursive"> Rotación: </i> Sincronizada </li>
+                                <li> <i class="cursive"> Tamaño: </i> ≈2.4 × Tierra (estimado)</li>
+                                <li> <i class="cursive"> Ubicación: </i> ~600 años luz</li>
+                                </ul>
+                        </p>
+                    </div>
+                </section>
+            </main> <!-- Etiqueta para cerrar la etiqueta main -->
+        </div> <!-- Etiqueta para cerrar la etiqueta div -->
+
+        <footer class="footer"> <!-- Etiqueta para definir pie de página -->
+            © Copyright 2025 | KEPLER 22B <!-- Información del pie de página -->
+        </footer> <!-- Etiqueta para cerrar la etiqueta footer -->
+    </body> <!-- Etiqueta para cerrar la etiqueta body -->
+</html> <!-- Etiqueta para cerrar la etiqueta html -->

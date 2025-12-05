@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!-- Le indica al explorador web que el código que estamos realizando es html -->
+<html lang="es"> <!-- Etiqueta de raíz de la estructura -->
+    <head> <!-- Etiqueta para agregar características de la página web -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> KEPLER 22B - Luz </title> <!-- Etiqueta que indica el título de la página web -->
+        <link rel="stylesheet" href="kepler.css"> <!-- Call file .css for desing -->
+    </head> 
+
+    <body> <!-- Etiqueta donde se incluye todo el contenido de la página web -->
+        <div class="title"> KEPLER 22B </div> <!-- Titulo principal de la página -->
+
+        <div class="container"> <!-- Contenido del menú -->
+            <aside class="sidebar"> <!-- Menú lateral -->
+
+                <div class="main-item">
+                    <input type="checkbox" id="lux-toogle" checked> <!-- Etiqueta para crear un checkbox -->
+                    <label for="lux-toogle" class="main-title"> Reino de la luz </label>
+
+                    <div class="submain"> 
+                        <a href="#lux-carcater"> Características </a>
+                        <a href="#lux-cultura"> Cultura </a>
+                        <a href="#lux-entidad"> Entidad suprema </a>
+                        <a href="#lux-criaturas"> Criaturas </a>
+                    </div>
+                </div>
+            </aside>
+            
+            <div class="video-container"> <!-- Contenido del video -->
+                <video autoplay muted loop playsinline preload="auto"> <!-- Etiqueta para cargar el video sin audio -->
+                    <source src="/kepler_page/multimedia/videos/vxxdy-tcyx8.mp4" type="video/mp4"> <!-- Etiqueta para llamar el video -->
+                    Tu navegador no soporta video. <!-- Mensaje de error -->
+                </video>
+            </div>
+
+        
+            <main class="main-content"> <!-- Contenido principal -->
+
+                <section id="lux"> <!-- Etiqueta para crear una seccion identificada como lux -->
+                    <h2 class="handwritten-title"> Reino de la Luz </h2>
+                    <p> 
+                        El Reino de Sinteryum, también llamado la Corte Solar, es el centro cultural, artístico y científico del hemisferio iluminado. 
+                        Su territorio brilla con bosques de plantas bioluminiscentes, y ciudades construidas con cristales que absorben la energía solar para alimentar enormes proyectos de ingeniería.
+                        La sociedad valora la mente sobre la fuerza, y las posiciones importantes no se heredan: se ganan por capacidad intelectual, evaluada constantemente por el Counsex. 
+                        Son gobernados por una Reina Solar (Elara Voss), quien se cree es la encarnación de la luz divina. Cada Reina Solar es seleccionada por su capacidad para manipular las energías solares y proveer bienestar a la sociedad.
+                    </p>
+                    <br>
+                    Counsex es la institución más respetada de Sinteryum supervisa:
+                        <br>
+                        El flujo de energía solar para todo el planeta
+                        <br>
+                        La investigación avanzada en física, medicina y astroingeniería
+                        <br>
+                        La administración y comercio del cristal luminoso
+                        <br>
+                        Aunque el Counsex no gobierna, ningún proyecto nacional puede ejecutarse sin su aprobación.
+                    
+                    <div class="subseccion" id="lux-caracter">
+                        <h3> Características Keplerianos </h3>
+                        <p> 
+                            Viven en luz constante.
+                            <br>
+                            Piel ligeramente dorada.
+                            <br>
+                            Ojos brillantes por reflejo solar.
+                            <br>
+                            Altos índices cognitivos.
+                            <br>
+                            Longevidad ligeramente mayor.
+                        </p> <!-- Etiqueta para agregar párrafos -->
+                    </div>
+                    
+                    <div class="subseccion" id="lux-cultura">
+                        <h3> Cultura </h3>
+                        <p>
+                            La Sociedad de la Luz se ha enfocado en el aprovechamiento de la energía solar para crear ciudades flotantes y construcciones que absorben la energía de su entorno. 
+                            Son expertos en tecnología avanzada basada en la fotónica y la manipulación de la energía. 
+                            Sus ciudades son deslumbrantes, con estructuras que brillan incluso de noche debido a la acumulación de energía solar.
+                            Viven en una constante batalla por la expansión de sus territorios y la acumulación de energía. 
+                            La falta de contacto con el lado oscuro del planeta ha hecho que, en general, desconfíen de los de "Tenebrion" y los "Equinoxis", a quienes ven como "débiles" o "inferiores".
+                        </p>
+                    </div>
+                    
+                    <div class="subseccion" id="lux-entidad">
+                        <h3> Entidad Suprema </h3>
+                        <p>
+                            Adoran a la reina solar, un ser que les otorga su existencia, y celebran un festival anual de luz donde las energías del sol se manifiestan en formas de poderosas auroras solares.
+                        </p>
+                    </div>
+
+                    <div class="subseccion" id="lux-criaturas">
+                        <h3> Criaturas </h3>
+                        <p>
+                            Fotovores: Grandes herbívoros con alas membranosas cubiertas de células fotovoltaicas que absorben energía solar para volar indefinidamente; su piel dorada brilla, y emiten destellos para comunicarse durante auroras. 
+                            Lumin serpientes: Reptiles alargados con escamas bioluminiscentes que almacenan luz para cazar de noche (aunque no hay noche verdadera), inyectando veneno que causa "ceguera solar" temporal. 
+                            Auror aves: Pájaros migratorios con plumas que refractan luz en patrones hipnóticos, usados en festivales para invocar la Reina Solar; se alimentan de plantas que acumulan energía fotónica. 
+                        </p>
+                    </div>
+                </section>
+            </main> <!-- Etiqueta para cerrar la etiqueta main -->
+        </div> <!-- Etiqueta para cerrar la etiqueta div -->
+
+        <button class="back-btn" onclick="window.location.href='kepler.html'">
+            Back arrow
+        </button>
+
+        <footer class="footer"> <!-- Etiqueta para definir pie de página -->
+            © Copyright 2025 | KEPLER 22B <!-- Información del pie de página -->
+        </footer> <!-- Etiqueta para cerrar la etiqueta footer -->
+    </body> <!-- Etiqueta para cerrar la etiqueta body -->
+</html> <!-- Etiqueta para cerrar la etiqueta html -->

@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- Le indica al explorador web que el código que estamos realizando es html -->
+<html lang="es"> <!-- Etiqueta de raíz de la estructura -->
+    <head> <!-- Etiqueta para agregar características de la página web -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> KEPLER 22B - Oscuridad </title> <!-- Etiqueta que indica el título de la página web -->
+        <link rel="stylesheet" href="kepler.css"> <!-- Call file .css for desing -->
+    </head> 
+
+    <body> <!-- Etiqueta donde se incluye todo el contenido de la página web -->
+        <div class="title"> KEPLER 22B </div> <!-- Titulo principal de la página -->
+
+        <div class="container"> <!-- Contenido del menú -->
+            <aside class="sidebar"> <!-- Menú lateral -->
+
+                <div class="main-item">
+                    <input type="checkbox" id="dark-toogle" checked> 
+                    <label for="dark-toogle" class="main-title"> Reino de la Oscuridad </label>
+
+                    <div class="submain"> 
+                        <a href="dark.html"> Reino </a>
+                        <a href="#dark-carcater"> Características </a>
+                        <a href="#dark-cultura"> Cultura </a>
+                        <a href="#dark-entidad"> Entidad suprema </a>
+                        <a href="#dark-criaturas"> Criaturas </a>
+                    </div>
+                </div>
+            </aside>
+            
+            <div class="video-container"> <!-- Contenido del video -->
+                <video autoplay muted loop playsinline preload="auto"> <!-- Etiqueta para cargar el video sin audio -->
+                    <source src="/kepler_page/multimedia/videos/vxxdy-tcyx8.mp4" type="video/mp4"> <!-- Etiqueta para llamar el video -->
+                    Tu navegador no soporta video. <!-- Mensaje de error -->
+                </video>
+            </div>
+
+        
+            <main class="main-content"> <!-- Contenido principal -->
+
+                <section id="dark"> <!-- Etiqueta para crear una seccion identificada como dark -->
+                    <h2 class="handwritten-title"> Reino de la Oscuridad </h2>
+                    <p>
+                        La zona oscura, conocida como Tenebrion, es un lugar de fría quietud, donde nunca llega la luz del sol. 
+                        La vida en Tenebrion ha evolucionado para sobrevivir en la oscuridad, aprovechando el bioluminiscencia y las fuentes de energía geotérmica provenientes del interior del planeta. 
+                        Los habitantes de la sombra son criaturas de piel oscura y ojos que brillan en la oscuridad.
+                    </p>
+                    
+                    <div class="subseccion" id="dark-caracter">
+                        <h3> Características </h3>
+                        <p>
+                            Los habitantes de la Sombra tienen una piel negra mate, casi absorbente, para protegerse de la radiación solar indirecta que puede filtrarse por algunos valles o grietas. 
+                            Tienen ojos adaptados para ver en total oscuridad, y su sentido del oído es extremadamente desarrollado, dado que se guían principalmente por ecos y sonidos subterráneos.
+                        </p>
+                    </div>
+
+                    <div class="subseccion" id="dark-cultura">
+                        <h3> Cultura </h3>
+                        <p>
+                            En la oscuridad total, los habitantes de Tenebion han creado una cultura basada en el misterio, el sigilo y la paciencia. 
+                            Son conocidos por su destreza en la ingeniería subterránea y la manipulación de las energías geotérmicas que emergen de las entrañas del planeta. 
+                            Han construido enormes ciudades subterráneas y vastos túneles, e incluso poseen una red de comunicaciones basada en frecuencias sonoras
+                        </p>
+                    </div>
+
+                    <div class="subseccion" id="dark-entidad">
+                        <h3> Entidad Suprema </h3>
+                        <p>
+                            Adoran al rey lunar (Draven Kael), creencias basadas en la fuerza vital que emana de la oscuridad. 
+                            Consideran que la luz es algo peligroso y que la verdadera fuerza radica en lo desconocido. 
+                            La figura central de su fe es un antiguo ser que, según dicen, vivió en los primeros tiempos del planeta y fue capaz de trascender la luz y la oscuridad
+                        </p>
+                    </div>
+
+                    <div class="subseccion" id="dark-criaturas">
+                        <h3> Criaturas </h3>
+                        <p>
+                            Ecosombras: Mamíferos subterráneos con orejas gigantes y piel absorbente que emiten ultrasonidos para mapear túneles; usan energía geotérmica para calentar nidos y cazar presas invisibles.  
+                            Geotermos: Insectos colosales que perforan la corteza planetaria, extrayendo calor del núcleo para iluminar sus colonias con bioluminiscencia tenue; sus caparazones negros resisten radiación filtrada.  
+                            Susurro espíritus: Criaturas etéreas similares a murciélagos que se comunican con el Rey Oscuro a través de frecuencias sonoras, guiando a los habitantes en rituales y detectando intrusos con ecos preciso  
+                        </p>
+                    </div>
+                </section>
+            </main> <!-- Etiqueta para cerrar la etiqueta main -->
+        </div> <!-- Etiqueta para cerrar la etiqueta div -->
+
+        <button class="back-btn" onclick="window.location.href='kepler.html'">
+            Back arrow
+        </button>
+
+        <footer class="footer"> <!-- Etiqueta para definir pie de página -->
+            © Copyright 2025 • KEPLER 22B <!-- Información del pie de página -->
+        </footer> <!-- Etiqueta para cerrar la etiqueta footer -->
+    </body> <!-- Etiqueta para cerrar la etiqueta body -->
+</html> <!-- Etiqueta para cerrar la etiqueta html -->
