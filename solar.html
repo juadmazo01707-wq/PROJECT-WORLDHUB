@@ -1,42 +1,34 @@
-<!DOCTYPE html> <!-- Le indica al explorador web que el código que estamos realizando es html -->
-<html lang="es"> <!-- Etiqueta de raíz de la estructura -->
-    <head> <!-- Etiqueta para agregar características de la página web -->
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> KEPLER 22B - Luz </title> <!-- Etiqueta que indica el título de la página web -->
+        <title> KEPLER 22B - Luz </title> <!-- Tag indicating the title of the web page -->
         <link rel="stylesheet" href="kepler.css"> <!-- Call file .css for desing -->
     </head> 
-
-    <body> <!-- Etiqueta donde se incluye todo el contenido de la página web -->
-        <div class="title"> KEPLER 22B </div> <!-- Titulo principal de la página -->
-
-        <div class="container"> <!-- Contenido del menú -->
-            <aside class="sidebar"> <!-- Menú lateral -->
-
+    <body> 
+        <div class="title"> KEPLER 22B </div> 
+        <div class="container"> 
+            <aside class="sidebar">
                 <div class="main-item">
-                    <input type="checkbox" id="lux-toogle" checked> <!-- Etiqueta para crear un checkbox -->
+                    <input type="checkbox" id="lux-toogle" checked>
                     <label for="lux-toogle" class="main-title"> Reino de la luz </label>
-
                     <div class="submain"> 
-                        <a href="#lux-carcater"> Características </a>
+                        <a href="#lux-carcater"> Características </a> <!-- Call an identifier with the # symbol -->
                         <a href="#lux-cultura"> Cultura </a>
                         <a href="#lux-entidad"> Entidad suprema </a>
                         <a href="#lux-criaturas"> Criaturas </a>
                     </div>
                 </div>
             </aside>
-            
-            <div class="video-container"> <!-- Contenido del video -->
-                <video autoplay muted loop playsinline preload="auto"> <!-- Etiqueta para cargar el video sin audio -->
-                    <source src="/kepler_page/multimedia/videos/vxxdy-tcyx8.mp4" type="video/mp4"> <!-- Etiqueta para llamar el video -->
-                    Tu navegador no soporta video. <!-- Mensaje de error -->
+            <div class="video-container">
+                <video autoplay muted loop playsinline preload="auto"> 
+                    <source src="/kepler_page/multimedia/videos/vxxdy-tcyx8.mp4" type="video/mp4"> 
+                    Tu navegador no soporta video. 
                 </video>
             </div>
-
-        
-            <main class="main-content"> <!-- Contenido principal -->
-
-                <section id="lux"> <!-- Etiqueta para crear una seccion identificada como lux -->
+            <main class="main-content"> <!-- Main content -->
+                <section id="lux"> <!-- Tag to create a section identified as lux -->
                     <h2 class="handwritten-title"> Reino de la Luz </h2>
                     <p> 
                         El Reino de Sinteryum, también llamado la Corte Solar, es el centro cultural, artístico y científico del hemisferio iluminado. 
@@ -46,16 +38,15 @@
                     </p>
                     <br>
                     Counsex es la institución más respetada de Sinteryum supervisa:
-                        <br>
-                        El flujo de energía solar para todo el planeta
-                        <br>
-                        La investigación avanzada en física, medicina y astroingeniería
-                        <br>
-                        La administración y comercio del cristal luminoso
-                        <br>
-                        Aunque el Counsex no gobierna, ningún proyecto nacional puede ejecutarse sin su aprobación.
-                    
-                    <div class="subseccion" id="lux-caracter">
+                    <br>
+                    El flujo de energía solar para todo el planeta
+                    <br>
+                    La investigación avanzada en física, medicina y astroingeniería
+                    <br>
+                    La administración y comercio del cristal luminoso
+                    <br>
+                    Aunque el Counsex no gobierna, ningún proyecto nacional puede ejecutarse sin su aprobación.
+                    <div class="subseccion" id="lux-caracter"> <!-- Tag to create a subsection identified as lux-caracter -->
                         <h3> Características Keplerianos </h3>
                         <p> 
                             Viven en luz constante.
@@ -67,10 +58,9 @@
                             Altos índices cognitivos.
                             <br>
                             Longevidad ligeramente mayor.
-                        </p> <!-- Etiqueta para agregar párrafos -->
+                        </p>
                     </div>
-                    
-                    <div class="subseccion" id="lux-cultura">
+                    <div class="subseccion" id="lux-cultura"> <!-- Tag to create a subsection identified as lux-cultura -->
                         <h3> Cultura </h3>
                         <p>
                             La Sociedad de la Luz se ha enfocado en el aprovechamiento de la energía solar para crear ciudades flotantes y construcciones que absorben la energía de su entorno. 
@@ -80,15 +70,13 @@
                             La falta de contacto con el lado oscuro del planeta ha hecho que, en general, desconfíen de los de "Tenebrion" y los "Equinoxis", a quienes ven como "débiles" o "inferiores".
                         </p>
                     </div>
-                    
-                    <div class="subseccion" id="lux-entidad">
+                    <div class="subseccion" id="lux-entidad"> <!-- Tag to create a subsection identified as lux-entidad -->
                         <h3> Entidad Suprema </h3>
                         <p>
                             Adoran a la reina solar, un ser que les otorga su existencia, y celebran un festival anual de luz donde las energías del sol se manifiestan en formas de poderosas auroras solares.
                         </p>
                     </div>
-
-                    <div class="subseccion" id="lux-criaturas">
+                    <div class="subseccion" id="lux-criaturas"> <!-- Tag to create a subsection identified as lux-criaturas -->
                         <h3> Criaturas </h3>
                         <p>
                             Fotovores: Grandes herbívoros con alas membranosas cubiertas de células fotovoltaicas que absorben energía solar para volar indefinidamente; su piel dorada brilla, y emiten destellos para comunicarse durante auroras. 
@@ -97,15 +85,13 @@
                         </p>
                     </div>
                 </section>
-            </main> <!-- Etiqueta para cerrar la etiqueta main -->
-        </div> <!-- Etiqueta para cerrar la etiqueta div -->
-
-        <button class="back-btn" onclick="window.location.href='kepler.html'">
+            </main>
+        </div>
+        <button class="back-btn" onclick="window.location.href='kepler.html'"> <!-- Tag to create a button -->
             Back arrow
-        </button>
-
-        <footer class="footer"> <!-- Etiqueta para definir pie de página -->
-            © Copyright 2025 | KEPLER 22B <!-- Información del pie de página -->
-        </footer> <!-- Etiqueta para cerrar la etiqueta footer -->
-    </body> <!-- Etiqueta para cerrar la etiqueta body -->
-</html> <!-- Etiqueta para cerrar la etiqueta html -->
+        </button> <!-- Tag to close button tag -->
+        <footer class="footer"> 
+            © Copyright 2025 | KEPLER 22B 
+        </footer> 
+    </body>
+</html>

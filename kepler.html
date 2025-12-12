@@ -1,41 +1,33 @@
 <!-- CREATE A PAGE WEB ABOUT A FICTIONAL WORLD -->
-
-<!DOCTYPE html> <!-- Le indica al explorador web que el código que estamos realizando es html -->
-<html lang="es"> <!-- Etiqueta de raíz de la estructura -->
-    <head> <!-- Etiqueta para agregar características de la página web -->
-        <meta charset="UTF-8">
+<!DOCTYPE html> <!-- Tells the web browser that the code we are writing is HTML -->
+<html lang="es"> <!-- Tags of the squeleton root -->
+    <head> <!-- Tag to add web's caracteristics -->
+        <meta charset="UTF-8"> <!-- Tag to enter metadata -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> KEPLER 22B </title> <!-- Etiqueta que indica el título de la página web -->
+        <title> KEPLER 22B </title> <!-- Tag indicating the title of the web page -->
         <link rel="stylesheet" href="kepler.css"> <!-- Call file .css for desing -->
     </head> 
-
-    <body> <!-- Etiqueta donde se incluye todo el contenido de la página web -->
-        <div class="title"> KEPLER 22B </div> <!-- Titulo principal de la página -->
-
-        <div class="container"> <!-- Contenido del menú -->
-            <aside class="sidebar"> <!-- Menú lateral -->
-
-                <div class="main-principal"> <!-- Etiqueta para crear el menu principal -->
-                    <a href="#intro"> Introducción </a> <!-- Llama la seccion intro -->
+    <body> <!-- Tag that includes all the content on the web page -->
+        <div class="title"> KEPLER 22B </div> <!-- Main page title -->
+        <div class="container"> <!-- Menú content -->
+            <aside class="sidebar"> <!-- Side menu -->
+                <div class="main-principal"> <!-- Label to create the main menu -->
+                    <a href="#intro"> Introducción </a> <!-- Call the intro section -->
                 </div>
-
-                <div class="main-item">
-                    <input type="checkbox" id="lux-toogle"> <!-- Etiqueta para crear un checkbox -->
-                    <label for="lux-toogle" class="main-title"> Reino de la luz </label>
-
-                    <div class="submain">
-                        <a href="solar.html"> Reino </a>
+                <div class="main-item"> <!-- Label to create the menu of an item -->
+                    <input type="checkbox" id="lux-toogle"> <!-- Tag to create checkbox -->
+                    <label for="lux-toogle" class="main-title"> Reino de la luz </label> <!-- Tag with an input field on a form -->
+                    <div class="submain"> <!-- Label to create the submain -->
+                        <a href="solar.html"> Reino </a> <!-- Call file .html for complement information -->
                         <a href="solar.html#lux-carcater"> Características </a>
                         <a href="solar.html#lux-cultura"> Cultura </a>
                         <a href="solar.html#lux-entidad"> Entidad suprema </a>
                         <a href="solar.html#lux-criaturas"> Criaturas </a>
                     </div>
                 </div>
-
                 <div class="main-item">
                     <input type="checkbox" id="dark-toogle"> 
                     <label for="dark-toogle" class="main-title"> Reino de la Oscuridad </label>
-
                     <div class="submain"> 
                         <a href="dark.html"> Reino </a>
                         <a href="dark.html#dark-carcater"> Características </a>
@@ -44,11 +36,9 @@
                         <a href="dark.html#dark-criaturas"> Criaturas </a>
                     </div>
                 </div>
-
                 <div class="main-item">
                     <input type="checkbox" id="medium-toogle"> 
                     <label for="medium-toogle" class="main-title"> Reino del Medio </label>
-
                     <div class="submain"> 
                         <a href="medium.html"> Reino </a>
                         <a href="medium.html#medium-carcater"> Características </a>
@@ -58,41 +48,35 @@
                     </div>
                 </div>
             </aside>
-            
-            <div class="video-container"> <!-- Contenido del video -->
-                <video autoplay muted loop playsinline preload="auto"> <!-- Etiqueta para cargar el video sin audio -->
-                    <source src="/kepler_page/multimedia/videos/vxxdy-tcyx8.mp4" type="video/mp4"> <!-- Etiqueta para llamar el video -->
-                    Tu navegador no soporta video. <!-- Mensaje de error -->
+            <div class="video-container"> <!-- Video content -->
+                <video autoplay muted loop playsinline preload="auto"> <!-- Tag to load the video without audio -->
+                    <source src="/kepler_page/multimedia/videos/vxxdy-tcyx8.mp4" type="video/mp4"> <!-- Tag to call the video -->
+                    Tu navegador no soporta video. <!-- Error message -->
                 </video>
             </div>
-
-        
-            <main class="main-content"> <!-- Contenido principal -->
-
-                <section id="intro" class="text-box"> <!-- Etiqueta para crear una seccion identificada como intro -->
-                    <h1 class="handwritten-title"> Introducción </h1> <!-- Etiqueta que indica un titulo -->
-                    <p> 
+            <main class="main-content"> <!-- Tag to create main content -->
+                <section id="intro" class="text-box"> <!-- Tag to create a section identified as intro -->
+                    <h1 class="handwritten-title"> Introducción </h1> <!-- Tag indicating a title -->
+                    <p> <!-- Tag paragraph -->
                         Kepler 22b es un exoplaneta en una órbita tan peculiar que presenta una rotación sincronizada con su estrella, lo que significa que un hemisferio está siempre iluminado, mientras que el otro está en completa oscuridad. 
                         La línea divisoria, conocida como "La Franja de Medianoche", es un limbo perpetuo donde la transición entre luz y sombra crea un borde borroso, y donde las condiciones cambian drásticamente de un lado a otro; corresponde al reino de "". 
                         A sus extremos se encuentran los reinos de Lux y Dartumbria. Y más allá de ellos… las Tierras Exteriores, hogar de criaturas, nómadas y rezagados que no pertenecen a ninguna corte.
                     </p>
-                
-                    <div class="subseccion"> <!-- Etiqueta para crear una subseccion -->
+                    <div class="subseccion"> <!-- Tag to create a subsection -->
                         <p>
-                            <span class="border-top"> Datos rápidos: </span>
-                                <ul class="tabed-list">
-                                <li> <i class="cursive"> Rotación: </i> Sincronizada </li>
+                            <span class="border-top"> Datos rápidos: </span> <!-- Label to style text or group elements inline -->
+                                <ul class="tabed-list"> <!-- Tag to create a list -->
+                                <li> <i class="cursive"> Rotación: </i> Sincronizada </li> <!-- Tag to declare each of the elemnts in a list -->
                                 <li> <i class="cursive"> Tamaño: </i> ≈2.4 × Tierra (estimado)</li>
                                 <li> <i class="cursive"> Ubicación: </i> ~600 años luz</li>
-                                </ul>
+                                </ul> <!-- Tag to close ul tag -->
                         </p>
                     </div>
-                </section>
-            </main> <!-- Etiqueta para cerrar la etiqueta main -->
-        </div> <!-- Etiqueta para cerrar la etiqueta div -->
-
-        <footer class="footer"> <!-- Etiqueta para definir pie de página -->
-            © Copyright 2025 | KEPLER 22B <!-- Información del pie de página -->
-        </footer> <!-- Etiqueta para cerrar la etiqueta footer -->
-    </body> <!-- Etiqueta para cerrar la etiqueta body -->
-</html> <!-- Etiqueta para cerrar la etiqueta html -->
+                </section> <!-- Tag to close section tag -->
+            </main> <!-- Tag to close the main tag -->
+        </div> <!-- Tag to close div tag -->
+        <footer class="footer"> <!-- Label to define footer -->
+            © Copyright 2025 | KEPLER 22B <!-- Footer information -->
+        </footer> <!-- Tag to close the footer tag -->
+    </body> <!-- Tag to close the body tag -->
+</html> <!-- Tag to close the html tag -->
