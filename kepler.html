@@ -1,82 +1,82 @@
 <!-- CREATE A PAGE WEB ABOUT A FICTIONAL WORLD -->
-<!DOCTYPE html> <!-- Tells the web browser that the code we are writing is HTML -->
-<html lang="es"> <!-- Tags of the squeleton root -->
-    <head> <!-- Tag to add web's caracteristics -->
-        <meta charset="UTF-8"> <!-- Tag to enter metadata -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> KEPLER 22B </title> <!-- Tag indicating the title of the web page -->
-        <link rel="stylesheet" href="kepler.css"> <!-- Call file .css for desing -->
-    </head> 
-    <body> <!-- Tag that includes all the content on the web page -->
-        <div class="title"> KEPLER 22B </div> <!-- Main page title -->
-        <div class="container"> <!-- Menú content -->
-            <aside class="sidebar"> <!-- Side menu -->
-                <div class="main-principal"> <!-- Label to create the main menu -->
-                    <a href="#intro"> Introducción </a> <!-- Call the intro section -->
+<!DOCTYPE html> <!-- Hey browser, this is modern HTML5 -->
+<html lang="en"> <!-- This page is in English -->
+    <head> <!-- Invisible but very important stuff (metadata, title, css) -->
+        <meta charset="UTF-8"> <!-- Allows accents ñ, emojis, etc... -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes it look good on phones -->
+        <title> KEPLER 22B </title> <!-- Text in the browser tab -->
+        <link rel="stylesheet" href="./kepler.css"> <!-- Load css file to style the page -->
+    </head> <!-- Tag to close the head tag -->
+    <body> <!-- Everything the user sees -->
+        <div class="title"> KEPLER 22B </div> <!-- Main page title at the top -->
+        <div class="container"> <!-- Main container -->
+            <aside class="sidebar"> <!-- Left sidebar with according menu -->
+                <div class="main-principal"> <!-- Fixed menu item -->
+                    <a href="./kepler.html#intro"> Introducción </a> <!-- Link to the introduction section -->
                 </div>
-                <div class="main-item"> <!-- Label to create the menu of an item -->
-                    <input type="checkbox" id="lux-toogle"> <!-- Tag to create checkbox -->
-                    <label for="lux-toogle" class="main-title"> Reino de la luz </label> <!-- Tag with an input field on a form -->
-                    <div class="submain"> <!-- Label to create the submain -->
-                        <a href="solar.html"> Reino </a> <!-- Call file .html for complement information -->
-                        <a href="solar.html#lux-carcater"> Características </a>
-                        <a href="solar.html#lux-cultura"> Cultura </a>
-                        <a href="solar.html#lux-entidad"> Entidad suprema </a>
-                        <a href="solar.html#lux-criaturas"> Criaturas </a>
+                <div class="main-item"> <!-- Foldable menu item -->
+                    <input type="checkbox" id="lux-toogle"> <!-- Hidden checkbox to toogle submenu -->
+                    <label for="lux-toogle" class="main-title"> Reino de la luz </label> <!-- Title that open/close the submenu -->
+                    <div class="submain"> <!-- Submenu links -->
+                        <a href="./solar.html"> Reino </a> 
+                        <a href="./solar.html#lux-caracter"> Características </a>
+                        <a href="./solar.html#lux-cultura"> Cultura </a>
+                        <a href="./solar.html#lux-entidad"> Entidad suprema </a>
+                        <a href="./solar.html#lux-criaturas"> Criaturas </a>
                     </div>
                 </div>
-                <div class="main-item">
+                <div class="main-item">  <!-- Foldable menu item -->
                     <input type="checkbox" id="dark-toogle"> 
                     <label for="dark-toogle" class="main-title"> Reino de la Oscuridad </label>
                     <div class="submain"> 
-                        <a href="dark.html"> Reino </a>
-                        <a href="dark.html#dark-carcater"> Características </a>
-                        <a href="dark.html#dark-cultura"> Cultura </a>
-                        <a href="dark.html#dark-entidad"> Entidad suprema </a>
-                        <a href="dark.html#dark-criaturas"> Criaturas </a>
+                        <a href="./dark.html"> Reino </a>
+                        <a href="./dark.html#dark-caracter"> Características </a>
+                        <a href="./dark.html#dark-cultura"> Cultura </a>
+                        <a href="./dark.html#dark-entidad"> Entidad suprema </a>
+                        <a href="./dark.html#dark-criaturas"> Criaturas </a>
                     </div>
                 </div>
-                <div class="main-item">
+                <div class="main-item">  <!-- Foldable menu item -->
                     <input type="checkbox" id="medium-toogle"> 
                     <label for="medium-toogle" class="main-title"> Reino del Medio </label>
                     <div class="submain"> 
-                        <a href="medium.html"> Reino </a>
-                        <a href="medium.html#medium-carcater"> Características </a>
-                        <a href="medium.html#medium-cultura"> Cultura </a>
-                        <a href="medium.html#medium-entidad"> Entidad suprema </a>
-                        <a href="medium.html#meidum-criaturas"> Criaturas </a>
+                        <a href="./medium.html"> Reino </a>
+                        <a href="./medium.html#medium-caracter"> Características </a>
+                        <a href="./medium.html#medium-cultura"> Cultura </a>
+                        <a href="./medium.html#medium-entidad"> Entidad suprema </a>
+                        <a href="./medium.html#medium-criaturas"> Criaturas </a>
                     </div>
                 </div>
-            </aside>
-            <div class="video-container"> <!-- Video content -->
-                <video autoplay muted loop playsinline preload="auto"> <!-- Tag to load the video without audio -->
-                    <source src="/kepler_page/multimedia/videos/vxxdy-tcyx8.mp4" type="video/mp4"> <!-- Tag to call the video -->
-                    Tu navegador no soporta video. <!-- Error message -->
-                </video>
-            </div>
-            <main class="main-content"> <!-- Tag to create main content -->
-                <section id="intro" class="text-box"> <!-- Tag to create a section identified as intro -->
-                    <h1 class="handwritten-title"> Introducción </h1> <!-- Tag indicating a title -->
-                    <p> <!-- Tag paragraph -->
+            </aside> <!-- Tag to close the aside tag -->
+            <div class="video-container"> <!-- Side video seciton -->
+                <video autoplay muted loop playsinline preload="auto"> <!-- Automatic video playback without sound -->
+                    <source src="./multimedia/videos/intro.mp4" type="video/mp4"> <!-- Specifies the source of the video to be played -->
+                    Tu navegador no soporta video. <!-- Alternative message -->
+                </video> <!-- Tag to close the video tag -->
+            </div> 
+            <main class="main-content"> <!-- Central content area -->
+                <section id="intro" class="text-box"> <!-- Introduction section -->
+                    <h1 class="handwritten-title"> Introducción </h1> <!-- Main heading -->
+                    <p> <!-- Descriptive paragraph about Kepler 22b -->
                         Kepler 22b es un exoplaneta en una órbita tan peculiar que presenta una rotación sincronizada con su estrella, lo que significa que un hemisferio está siempre iluminado, mientras que el otro está en completa oscuridad. 
-                        La línea divisoria, conocida como "La Franja de Medianoche", es un limbo perpetuo donde la transición entre luz y sombra crea un borde borroso, y donde las condiciones cambian drásticamente de un lado a otro; corresponde al reino de "". 
+                        La línea divisoria, conocida como "La Franja de Medianoche", es un limbo perpetuo donde la transición entre luz y sombra crea un borde borroso, y donde las condiciones cambian drásticamente de un lado a otro; corresponde al reino de "Cresendo". 
                         A sus extremos se encuentran los reinos de Lux y Dartumbria. Y más allá de ellos… las Tierras Exteriores, hogar de criaturas, nómadas y rezagados que no pertenecen a ninguna corte.
                     </p>
-                    <div class="subseccion"> <!-- Tag to create a subsection -->
+                    <div class="subseccion"> <!-- Quick facts subsection -->
                         <p>
-                            <span class="border-top"> Datos rápidos: </span> <!-- Label to style text or group elements inline -->
-                                <ul class="tabed-list"> <!-- Tag to create a list -->
-                                <li> <i class="cursive"> Rotación: </i> Sincronizada </li> <!-- Tag to declare each of the elemnts in a list -->
+                            <span class="border-top"> Datos rápidos: </span> <!-- Subtitle -->
+                                <ul class="tabed-list"> <!-- List of key data -->
+                                <li> <i class="cursive"> Rotación: </i> Sincronizada </li>
                                 <li> <i class="cursive"> Tamaño: </i> ≈2.4 × Tierra (estimado)</li>
                                 <li> <i class="cursive"> Ubicación: </i> ~600 años luz</li>
-                                </ul> <!-- Tag to close ul tag -->
-                        </p>
+                                </ul> <!-- Tag to close the ul tag -->
+                        </p> <!-- Tag to close the p tag -->
                     </div>
-                </section> <!-- Tag to close section tag -->
+                </section> <!-- Tag to close the section tag -->
             </main> <!-- Tag to close the main tag -->
-        </div> <!-- Tag to close div tag -->
-        <footer class="footer"> <!-- Label to define footer -->
-            © Copyright 2025 | KEPLER 22B <!-- Footer information -->
+        </div> <!-- Tag to close the div container tag -->
+        <footer class="footer"> <!-- Page footer -->
+            © Copyright 2025 | KEPLER 22B <!-- Simple copyright -->
         </footer> <!-- Tag to close the footer tag -->
     </body> <!-- Tag to close the body tag -->
 </html> <!-- Tag to close the html tag -->

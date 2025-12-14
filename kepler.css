@@ -1,3 +1,4 @@
+/* APPLY STYLES TO THE PAGE */ 
 * { /* Reset global */
     box-sizing: border-box; 
     margin: 0; 
@@ -33,7 +34,7 @@ body { /* Body and base typography */
     flex-wrap: wrap;
 }
 
-.sidebar {
+.sidebar { /* Left sidebar menu */
     width: 300px;
     min-width: 280px;
     background: rgba(10, 10, 30, 0.98);
@@ -48,7 +49,7 @@ body { /* Body and base typography */
     transition: all 0.4s ease;
 }
 
-.main-principal a, .main-title {
+.main-principal a, .main-title { /* Menu links and titles */
     display: block;
     color: #0af;
     font-size: 1.25rem;
@@ -75,12 +76,12 @@ body { /* Body and base typography */
     transition: transform 0.4s; /* Hover effects and transitions */
 }
 
-.main-title:hover, .main-principal a:hover {
+.main-title:hover, .main-principal a:hover { /* Hover effects */
     background: rgba(0, 170, 255, 0.35);
     color: #fff;
 }
 
-.main-item input[type="checkbox"] { 
+.main-item input[type="checkbox"] {  /* Hide checkbox but use it to open/close submenu */
     display: none; 
 }
 
@@ -93,15 +94,15 @@ body { /* Body and base typography */
     margin-top: 8px;
 }
 
-.main-item input[type="checkbox"]:checked ~ .submain {
+.main-item input[type="checkbox"]:checked ~ .submain { /* When checkbox is checked - open submenu */  
     max-height: 600px;
 }
 
-.main-item input[type="checkbox"]:checked ~ .main-title::after {
+.main-item input[type="checkbox"]:checked ~ .main-title::after { /* Rotate arrow when open */ 
     transform: rotate(180deg);
 }
 
-.submain a {
+.submain a { /* Submenu links */
     display: block;
     padding: 12px 30px;
     color: #cce;
@@ -116,13 +117,13 @@ body { /* Body and base typography */
     padding-left: 40px;
 }
 
-.main-content {
+.main-content { /* Main text content area */
     flex: 1;
     max-width: 1000px;
     padding: 20px 10px;
 }
 
-.handwritten-title {
+.handwritten-title { /* Big handwritten-style headings */
     font-family: 'Sacramento', cursive;
     font-size: clamp(3rem, 10vw, 5.5rem);
     text-align: center;
@@ -131,7 +132,7 @@ body { /* Body and base typography */
     text-shadow: 0 0 25px rgba(100, 200, 255, 0.5);
 }
 
-.subseccion {
+.subseccion { /* Info boxes */
     background: rgba(20, 20, 50, 0.8);
     padding: clamp(20px, 5vw, 35px);
     margin: 40px 0;
@@ -146,7 +147,7 @@ body { /* Body and base typography */
     font-size: clamp(1.4rem, 4vw, 1.8rem);
 }
 
-.video-container { /*Style video */
+.video-container { /* Style video */
     position: fixed;
     right: 30px;
     top: 220px;
@@ -193,7 +194,7 @@ body { /* Body and base typography */
     box-shadow: 0 15px 40px rgba(0, 170, 255, 0.7);
 }
 
-.footer {
+.footer { /* Footer at the bottom */ 
     text-align: center;
     padding: 50px 20px;
     color: #666;
@@ -201,16 +202,28 @@ body { /* Body and base typography */
     font-size: 1rem;
 }
 
-html { scroll-behavior: smooth; }
-
-/* Responsive */ 
-@media (max-width: 1024px) {
-    .container { padding: 15px; gap: 20px; }
-    .sidebar { width: 260px; padding: 20px; }
-    .video-container { width: 340px; right: 15px; top: 180px; }
+html { /* Smooth scrolling when clicking links */
+    scroll-behavior: smooth; 
 }
 
-@media (max-width: 768px) {
+/* Responsive */ 
+@media (max-width: 1024px) { /* Tablets */
+    .container { 
+        padding: 15px; 
+        gap: 20px; 
+    }
+    .sidebar { 
+        width: 260px; 
+        padding: 20px; 
+    }
+    .video-container { 
+        width: 340px; 
+        right: 15px; 
+        top: 180px; 
+    }
+}
+
+@media (max-width: 768px) { /* Phones */ 
     .container {
         flex-direction: column;
         padding: 10px;
@@ -223,7 +236,9 @@ html { scroll-behavior: smooth; }
         margin-top: 20px;
         border-radius: 12px;
     }
-    .main-content { order: 1; }
+    .main-content { 
+        order: 1; 
+    }
     .video-container {
         position: relative;
         right: auto;
@@ -241,14 +256,34 @@ html { scroll-behavior: smooth; }
     }
 }
 
-@media (max-width: 480px) {
-    .title { font-size: 2.8rem; letter-spacing: 8px; padding: 25px 10px; }
-    .handwritten-title { font-size: 3.2rem; margin: 40px 0 30px; }
-    .subseccion { padding: 20px; margin: 25px 0; }
-    .sidebar { padding: 18px; }
-    .main-title, .main-principal a { font-size: 1.15rem; padding: 12px 14px; }
-    .submain a { padding: 10px 20px; font-size: 1rem; }
-    .video-container { margin: 15px 0; }
+@media (max-width: 480px) { /* Smaall phones */
+    .title { 
+        font-size: 2.8rem; 
+        letter-spacing: 8px; 
+        padding: 25px 10px; 
+    }
+    .handwritten-title { 
+        font-size: 3.2rem; 
+        margin: 40px 0 30px; 
+    }
+    .subseccion { 
+        padding: 20px; 
+        margin: 25px 0; 
+    }
+    .sidebar { 
+        padding: 18px; 
+    }
+    .main-title, .main-principal a { 
+        font-size: 1.15rem; 
+        padding: 12px 14px; 
+    }
+    .submain a { 
+        padding: 10px 20px; 
+        font-size: 1rem; 
+    }
+    .video-container { 
+        margin: 15px 0; 
+    }
     .back-btn {
         padding: 12px 28px;
         font-size: 0.95rem;
@@ -256,9 +291,20 @@ html { scroll-behavior: smooth; }
     }
 }
 
-@media (min-width: 1600px) {
-    .container { max-width: 1800px; margin: 0 auto; padding: 50px; }
-    .sidebar { width: 340px; }
-    .video-container { width: 420px; right: 60px; }
-    .main-content { max-width: 1100px; }
+@media (min-width: 1600px) { /* Big screens */
+    .container { 
+        max-width: 1800px; 
+        margin: 0 auto; 
+        padding: 50px;
+    }
+    .sidebar { 
+        width: 340px; 
+    }
+    .video-container { 
+        width: 420px; 
+        right: 60px; 
+    }
+    .main-content { 
+        max-width: 1100px; 
+    }
 }

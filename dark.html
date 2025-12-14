@@ -1,50 +1,49 @@
+<!-- CREATE A SUB-PAGE ABOUT THE KINGDOM OF DARKNESS-->
 <!DOCTYPE html> 
 <html lang="es"> 
     <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> KEPLER 22B - Oscuridad </title> <!-- Tag indicating the title of the web page -->
-        <link rel="stylesheet" href="kepler.css"> <!-- Call file .css for desing -->
+        <title> KEPLER 22B - Oscuridad </title> <!-- Text in the browser tab -->
+        <link rel="stylesheet" href="./kepler.css"> <!-- Load css file to style the page -->
     </head> 
     <body> 
-        <div class="title"> KEPLER 22B </div> 
-        <div class="container">
-            <aside class="sidebar"> 
-                <div class="main-item">
-                    <input type="checkbox" id="dark-toogle" checked> 
-                    <label for="dark-toogle" class="main-title"> Reino de la Oscuridad </label>
-
-                    <div class="submain"> 
-                        <a href="dark.html"> Reino </a>
-                        <a href="#dark-carcater"> Características </a>
-                        <a href="#dark-cultura"> Cultura </a>
-                        <a href="#dark-entidad"> Entidad suprema </a>
-                        <a href="#dark-criaturas"> Criaturas </a>
+        <div class="title"> KEPLER 22B </div> <!-- Main page title at the top -->
+        <div class="container"> <!-- Main container -->
+            <aside class="sidebar"> <!-- Left sidebar with according menu -->
+                <div class="main-item"> <!-- Foldable menu item -->
+                    <input type="checkbox" id="dark-toogle" checked> <!-- Checkbox to open/close the menu -->
+                    <label for="dark-toogle" class="main-title"> Reino de la Oscuridad </label> <!-- Clickable title -->
+                    <div class="submain"> <!-- List of links -->
+                        <a href="./dark.html#dark-caracter"> Características </a> <!-- Jump to characteristics seection -->
+                        <a href="./dark.html#dark-culture"> Cultura </a> <!-- Jump to culture seciton -->
+                        <a href="./dark.html#dark-entity"> Entidad suprema </a> <!-- Jump to supreme entity section -->
+                        <a href="./dark.html#dark-creatures"> Criaturas </a> <!-- Jump to creatures section -->
                     </div>
                 </div>
             </aside>
-            <div class="video-container"> 
-                <video autoplay muted loop playsinline preload="auto"> 
-                    <source src="/kepler_page/multimedia/videos/vxxdy-tcyx8.mp4" type="video/mp4">
-                    Tu navegador no soporta video.
+            <div class="video-container"> <!-- Side video seciton -->
+                <video autoplay muted loop playsinline preload="auto"> <!-- Automatic video playback without sound -->
+                    <source src="./multimedia/videos/intro.mp4" type="video/mp4"> <!-- Specifies the source of the video to be played -->
+                    Tu navegador no soporta video. <!-- Alternative message -->
                 </video>
             </div>
-            <main class="main-content"> 
-                <section id="dark"> <!-- Tag to create a section identified as dark -->
-                    <h2 class="handwritten-title"> Reino de la Oscuridad </h2>
-                    <p>
+            <main class="main-content"> <!-- Main content -->
+                <section id="dark"> <!-- Section about the darkness kingdom -->
+                    <h2 class="handwritten-title"> Reino de la Oscuridad </h2> <!-- Main heading -->
+                    <p> <!-- Detailed description of the kingdom -->
                         La zona oscura, conocida como Tenebrion, es un lugar de fría quietud, donde nunca llega la luz del sol. 
                         La vida en Tenebrion ha evolucionado para sobrevivir en la oscuridad, aprovechando el bioluminiscencia y las fuentes de energía geotérmica provenientes del interior del planeta. 
                         Los habitantes de la sombra son criaturas de piel oscura y ojos que brillan en la oscuridad.
                     </p>
-                    <div class="subseccion" id="dark-caracter"> <!-- Tag to create a section identified as dark-caracter -->
+                    <div class="subseccion" id="dark-caracter"> <!-- Subsection characteristics -->
                         <h3> Características </h3>
                         <p>
                             Los habitantes de la Sombra tienen una piel negra mate, casi absorbente, para protegerse de la radiación solar indirecta que puede filtrarse por algunos valles o grietas. 
                             Tienen ojos adaptados para ver en total oscuridad, y su sentido del oído es extremadamente desarrollado, dado que se guían principalmente por ecos y sonidos subterráneos.
                         </p>
                     </div>
-                    <div class="subseccion" id="dark-cultura"> <!-- Tag to create a section identified as dark-cultura -->
+                    <div class="subseccion" id="dark-culture"> <!-- Subsection culture -->
                         <h3> Cultura </h3>
                         <p>
                             En la oscuridad total, los habitantes de Tenebion han creado una cultura basada en el misterio, el sigilo y la paciencia. 
@@ -52,7 +51,7 @@
                             Han construido enormes ciudades subterráneas y vastos túneles, e incluso poseen una red de comunicaciones basada en frecuencias sonoras
                         </p>
                     </div>
-                    <div class="subseccion" id="dark-entidad"> <!-- Tag to create a section identified as dark-entidad -->
+                    <div class="subseccion" id="dark-entity"> <!-- Subsection entity -->
                         <h3> Entidad Suprema </h3>
                         <p>
                             Adoran al rey lunar (Draven Kael), creencias basadas en la fuerza vital que emana de la oscuridad. 
@@ -60,7 +59,7 @@
                             La figura central de su fe es un antiguo ser que, según dicen, vivió en los primeros tiempos del planeta y fue capaz de trascender la luz y la oscuridad
                         </p>
                     </div>
-                    <div class="subseccion" id="dark-criaturas"> <!-- Tag to create a section identified as dark-criaturas -->
+                    <div class="subseccion" id="dark-creatures"> <!-- Subsection creatures -->
                         <h3> Criaturas </h3>
                         <p>
                             Ecosombras: Mamíferos subterráneos con orejas gigantes y piel absorbente que emiten ultrasonidos para mapear túneles; usan energía geotérmica para calentar nidos y cazar presas invisibles.  
@@ -71,11 +70,11 @@
                 </section>
             </main> 
         </div> 
-        <button class="back-btn" onclick="window.location.href='kepler.html'">
+        <button class="back-btn" onclick="window.location.href='./kepler.html'"> <!-- Button to go back to the main page -->
             Back arrow
         </button>
-        <footer class="footer"> 
-            © Copyright 2025 • KEPLER 22B
+        <footer class="footer"> <!-- Page footer -->
+            © Copyright 2025 | KEPLER 22B <!-- Simple copyright -->
         </footer>
     </body> 
 </html>
